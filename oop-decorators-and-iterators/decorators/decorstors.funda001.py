@@ -1,5 +1,4 @@
 
-
 def outer(x): # x=5
     def inner(y):  # y=10
         return x + y
