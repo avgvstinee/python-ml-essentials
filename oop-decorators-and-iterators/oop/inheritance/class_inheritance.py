@@ -35,7 +35,7 @@ class RaceCar(Car):
 class CityCar(Car):
     engine_cls = ElectricEngine
 
-class F1Car(Car):
+class F1Car(RaceCar):
     engine_cls = V8Engine
     
 

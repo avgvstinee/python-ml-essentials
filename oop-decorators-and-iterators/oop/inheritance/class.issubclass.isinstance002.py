@@ -1,0 +1,35 @@
+
+from class_inheritance import Car, RaceCar , F1Car
+
+
+car = Car()
+racecar = RaceCar()
+f1car = F1Car()
+
+cars = [(car, 'car'), (racecar, 'racecar'), (f1car, 'f1-car')]
+
+car_classes = [Car, RaceCar, F1Car]
+
+
+for class1 in car_classes:
+    for class2 in car_classes:
+        is_subclass = issubclass(class1, class2)
+        msg = '{0} a subclass of' .format(
+            'is' if is_subclass else 'is not'
+        )
+        print(class1.__name__, msg, class2.__name__)
+
+""" Prints:
+Car is a subclass of Car
+Car is not a subclass of RaceCar
+Car is not a subclass of F1Car
+
+RaceCar is a subclass of Car
+RaceCar is a subclass of RaceCar
+RaceCar is not a subclass of F1Car  
+
+F1Car is a subclass of Car
+F1Car is a subclass of RaceCar
+F1Car is a subclass of F1Car
+
+"""
