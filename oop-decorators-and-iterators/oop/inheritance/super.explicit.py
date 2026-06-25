@@ -10,4 +10,8 @@ class Ebook(Book):
         Book.__init__(self,title,publisher,pages)
         self.format_ = format_
 
-ebook = Ebook('Learn Python Programming")
+ebook = Ebook('Learn Python Programming', 'Packt Publishing', 500, 'PDF')
+print(ebook.title)
+print(ebook.publisher)
+print(ebook.pages)
+print(ebook.format_)
