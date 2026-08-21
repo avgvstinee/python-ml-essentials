@@ -24,7 +24,7 @@ data = Dataset([
 
 print(f'There are {len(data)} records.')  # Output: 3
 print(f'The first records are {data[0]} ')  # Output: {'name': 'Alice'}
-print(f'The last records are {data[-1]} ')  # Output: {'name': 'Alice'}
+print(f'The last records are {data[-1]} ')  # Output: {'name': 'Charlie'}
 
 
 for record in data:
