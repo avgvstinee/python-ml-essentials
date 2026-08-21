@@ -4,8 +4,6 @@ It allows us to define a method that can be accessed like an attribute,
 and it can be used to define getter, setter, and deleter methods for an attribute.
 """
 
-
-
 class Person :
     def __init__(self,name,age):
         self._name = name
